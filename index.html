@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>TodoList</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body onload="onload()"> 
+        <div id="topBox">
+            <span style="font-family: STXingkai; font-size: 24px; padding-right: 26px;">TodoList</span>
+            <form action="javascript:addtodo()" class="add">
+                    <input type="text" id="addTodo_item" size="30">
+                    <input type="submit" value="添加" id="addTodo_btn">
+            </form>
+        </div>
+
+        <div id="centerBox">
+            <table  id="todo_list_tb" align="centent">
+                <thead>
+                    <p style="font-family: STXingkai; font-size: 20px; margin-top: 30px;">待完成任务</p>
+                </thead>
+                <tbody id="todo_list_body">
+                    
+                </tbody>
+            </table>
+
+            <hr id="center_hr">
+
+            <table id="done_list_body" align="centent">
+                <thead>
+                    <p style="font-family: STXingkai; font-size: 20px;">已完成任务</p>
+                </thead>
+                <tbody>
+                    <!-- 添加item的地方 -->
+                </tbody>
+            </table>
+
+        </div>
+    
+        <div id="bottomBox">
+            Copyright ©2021 By Jiangyong Liu
+        </div>
+    </body>
+</html>

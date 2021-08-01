@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color:#dbdfe9;
+}
+body {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* 顶部区域 */
+#topBox {
+    /* position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+    background-color: darkgrey; */
+}
+.add {
+    display:inline;
+
+    position: relative;
+    width: 546px;
+    height: 44px;
+    font-size: 0;
+}
+#addTodo_item {
+    width: 340px !important;
+    padding-right: 48px !important;
+    height: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: solid 2px #31c7ba;
+    border-radius: 10px;
+    outline: none;
+}
+#addTodo_btn {
+    position: absolute;
+    background-color: #31c7ba;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    width: 98px;
+    height: 36px;
+    right: 0px;
+    outline: none;
+    cursor: pointer;
+}
+#addTodo_btn:hover {
+    background-color: #1cf1ce;
+}
+
+/* 中间区域 */
+#centerBox {
+}
+/* 所有添加的元素 */
+table {
+    margin: auto;
+}
+.items_input{
+    width: 250px !important;
+    padding-right: 48px !important;
+    height: 3px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: solid 2px #dbdfe9;
+    border-radius: 10px;
+    outline: none;
+}
+#done_list_body .items_input {
+    width: 304px !important;
+}
+.items_done, #items_del {
+    position: relative;
+    background-color: #31c7ba;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    width: 54px;
+    height: 30px;
+    /* right:1px; */
+    outline: none;
+    cursor: pointer;
+}
+#center_hr {
+    width:90%;
+    margin:20px auto;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(131, 151, 151, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* 底部区域 */
+#bottomBox {
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    bottom: 0;
+    background-color: #dbdfe9;
+}
